@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+*.log
+*.obj
+*.dll
+*.exe
+*.wav
+*.ogg
+*.mp4
+
+TheOtherSide_Data/
+t/
+=======
+# Unity generated folders
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+
+# Visual Studio / Rider
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Unity cache
+MemoryCaptures/
+
+# Android build
+.gradle/
+*.apk
+*.aab
+
+# Others
+*.log
+*.zip
+*.rar
+>>>>>>> 3780777c512b401bd92e13b3008a4f24e354d438

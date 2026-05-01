@@ -1,0 +1,13 @@
+# Unity
+Library/
+Temp/
+Build/
+Builds/
+Logs/
+UserSettings/
+
+# Large files
+*.rar
+*.zip
+*.mp4
+*.psd
