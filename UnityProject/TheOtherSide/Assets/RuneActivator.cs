@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class RuneActivator : MonoBehaviour
 {
-	public Material dimMaterial;
-	public Material activeMaterial;
-	private Renderer rend;
+    public Material dimMaterial;
+    public Material activeMaterial;
+    private Renderer rend;
 
-	void Start()
-	{
-		rend = GetComponent<Renderer>();
-		rend.material = dimMaterial;
-	}
+    void Start()
+    {
+        rend = GetComponent<Renderer>();
+        rend.sharedMaterial = dimMaterial;      // FIXED: was rend.material
+    }
 
-	public void Activate()
-	{
-		rend.material = activeMaterial;
-		EmissivePulse pulse = gameObject.AddComponent<EmissivePulse>();
-		pulse.baseColor = new Color(1f, 0.78f, 0f);
-		pulse.minIntensity = 1.5f;
-		pulse.maxIntensity = 4.0f;
-		pulse.pulseSpeed = 2.5f;
-	}
+    public void Activate()
+    {
+        rend.sharedMaterial = activeMaterial;   // FIXED: was rend.material
+        EmissivePulse pulse = gameObject.AddComponent<EmissivePulse>();
+        pulse.baseColor    = new Color(1f, 0.78f, 0f);
+        pulse.minIntensity = 1.5f;
+        pulse.maxIntensity = 4.0f;
+        pulse.pulseSpeed   = 2.5f;
+    }
 }
